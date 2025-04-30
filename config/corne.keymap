@@ -83,7 +83,7 @@
                 gaming {
                         display-name = "Gaming";
                         bindings = <
-   &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y   &kp PRSCRN &none &none &none &none &to 0
+   &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y   &kp PRSCRN &trans &trans &trans &trans &to 0
    &kp M &kp A &kp S &kp D &kp F &kp G   &none &none &none &none &none &none
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &none &none &none &none &none &none
                    &kp LCTRL &kp SPACE &none &none &none &none

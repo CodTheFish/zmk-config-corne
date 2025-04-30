@@ -10,6 +10,12 @@
 
 #define GAME 3
 
+&mt {
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <300>;
+    flavor = "tap-unless-interrupted";
+};
+
 / {
     behaviors {
         lh_pht: home_row_left_mod_tap {

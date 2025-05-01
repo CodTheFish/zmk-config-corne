@@ -16,7 +16,7 @@
         lh_pht: home_row_left_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -34,13 +34,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 5>;
-        };
-
-        lhm_mod: lhm_mod {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LHM_MOD";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&lh_pht LEFT_ALT T>;
         };
     };
 };
@@ -60,10 +53,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P     &kp B        &kp J       &kp L  &kp U         &kp Y       &kp NB_O_SLASH  &kp NB_A_RING
-&kp LCTRL  &kp A  &kp R  &kp S     &lhm_mod  &kp G        &kp M       &kp N  &kp E         &kp I       &kp O           &kp NB_AE
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D     &kp V        &kp K       &kp H  &kp NB_COMMA  &kp NB_DOT  &kp NB_MINUS    &kp ESC
-                         &kp LGUI  &mo 1     &kp SPACE    &kp DELETE  &mo 2  &kp RET
+&kp TAB    &kp Q  &kp W  &kp F     &kp P               &kp B        &kp J       &kp L  &kp U         &kp Y       &kp NB_O_SLASH  &kp NB_A_RING
+&kp LCTRL  &kp A  &kp R  &kp S     &lh_pht LEFT_ALT T  &kp G        &kp M       &kp N  &kp E         &kp I       &kp O           &kp NB_AE
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D               &kp V        &kp K       &kp H  &kp NB_COMMA  &kp NB_DOT  &kp NB_MINUS    &kp ESC
+                         &kp LGUI  &mo 1               &kp SPACE    &kp DELETE  &mo 2  &kp RET
             >;
         };
 

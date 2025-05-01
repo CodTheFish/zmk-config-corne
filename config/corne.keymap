@@ -59,6 +59,7 @@
         alt_tab2 {
             bindings = <&kp LA(TAB)>;
             key-positions = <28 37>;
+            layers = <0 1>;
         };
     };
 

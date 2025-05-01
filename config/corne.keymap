@@ -16,13 +16,13 @@
         lh_pht: home_row_left_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <50>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <6 7 8 9 10 11>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <125>;
         };
 
         rh_pht: home_row_right_mod_tap {

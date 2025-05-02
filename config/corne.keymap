@@ -44,6 +44,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(TAB)>;
+            label = "ALT_TAB";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

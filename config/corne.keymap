@@ -107,10 +107,19 @@
         gaming {
             display-name = "Gaming";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T           &kp PSCRN  &trans  &trans  &trans  &trans  &tog 3
-&kp M      &kp A  &kp S  &kp D      &kp F      &kp G           &trans     &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B           &trans     &trans  &trans  &trans  &trans  &trans
-                         &kp LCTRL  &kp SPACE  &kp LEFT_ALT    &trans     &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T    &kp PSCRN  &trans  &trans  &trans  &trans  &tog 3
+&kp M      &kp A  &kp S  &kp D      &kp F      &kp G    &trans     &trans  &trans  &trans  &trans  &alt_tab
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B    &trans     &trans  &trans  &trans  &trans  &trans
+                         &kp LCTRL  &kp SPACE  &mo 4    &trans     &trans  &trans
+            >;
+        };
+
+        game_lower {
+            bindings = <
+&trans  &kp NB_N1  &kp NB_N2  &kp NB_N3  &kp NB_N4  &kp NB_N5    &kp NB_N6  &kp NB_N7  &kp NB_N8  &kp NB_N9  &kp NB_N0  &trans
+&trans  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans     &trans
+                              &trans     &trans     &trans       &trans     &trans     &trans
             >;
         };
     };

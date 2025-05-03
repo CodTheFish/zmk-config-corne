@@ -109,7 +109,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T    &kp PSCRN    &trans  &trans  &trans  &trans  &tog 3
 &kp M      &kp A  &kp S  &kp D      &kp F      &kp G    &kp PAGE_UP  &trans  &trans  &trans  &trans  &alt_tab
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B    &kp HOME     &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B    &kp HOME     &trans  &trans  &trans  &trans  &kp ESC
                          &kp LCTRL  &kp SPACE  &mo 4    &trans       &trans  &trans
             >;
         };

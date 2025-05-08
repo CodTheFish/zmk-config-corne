@@ -5,6 +5,7 @@
  */
 
 #include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/42.h"
 #include "zmk-helpers/unicode-chars/german_alt.dtsi"
 
 #include "keys_nb.h"

@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
+
 #include "keys_nb.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>

@@ -56,9 +56,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "ESZETT";
         };
@@ -78,7 +81,7 @@
             bindings = <
 &kp TAB    &kp Q          &kp W                 &kp F            &kp P               &kp B        &kp J          &kp L                &kp U            &kp Y             &kp NB_O_SLASH  &kp NB_A_RING
 &kp LCTRL  &lh_pht TAB A  &lh_pht LEFT_SHIFT R  &lh_pht LCTRL S  &lh_pht LEFT_ALT T  &kp G        &kp M          &rh_pht RIGHT_ALT N  &rh_pht LCTRL E  &rh_pht RSHIFT I  &rh_pht TAB O   &kp NB_AE
-&kp LSHFT  &kp Z          &kp X                 &kp C            &kp D               &kp V        &kp K          &kp H                &kp NB_COMMA     &kp NB_DOT        &kp NB_MINUS    &kp NB_QUESTION
+&kp ESC    &kp Z          &kp X                 &kp C            &kp D               &kp V        &kp K          &kp H                &kp NB_COMMA     &kp NB_DOT        &kp NB_MINUS    &kp NB_QUESTION
                                                 &kp LGUI         &mo 1               &kp SPACE    &kp BACKSPACE  &mo 2                &kp RET
             >;
         };
@@ -110,7 +113,7 @@
             bindings = <
 &kp TAB    &kp NB_EXCL  &kp NB_DOUBLE_QUOTES  &kp NB_HASH  &kp NB_DOLLAR        &kp NB_PERCENT    &kp NB_AMPS   &kp NB_SLASH                &kp NB_LEFT_PARENTHESIS        &kp NB_RIGHT_PARENTHESIS     &kp NB_EQUAL              &kp NB_QUESTION
 &kp LCTRL  &kp PAGE_UP  &kp NB_SINGLE_QUOTE   &kp NB_STAR  &trans               &trans            &kp NB_MINUS  &rh_pht RIGHT_ALT NB_EQUAL  &rh_pht RIGHT_CONTROL NB_LBKT  &rh_pht RIGHT_SHIFT NB_RBKT  &rh_pht TAB NB_BACKSLASH  &kp NB_GRAVE
-&kp LSHFT  &kp HOME     &kp NB_LESS_THAN      &eszett   &kp NB_GREATER_THAN  &trans            &kp NB_UNDER  &kp NB_PLUS                 &kp NB_LEFT_BRACE              &kp NB_RIGHT_BRACE           &kp NB_PIPE               &kp NB_TILDE
+&kp LSHFT  &kp HOME     &kp NB_LESS_THAN      &eszett      &kp NB_GREATER_THAN  &trans            &kp NB_UNDER  &kp NB_PLUS                 &kp NB_LEFT_BRACE              &kp NB_RIGHT_BRACE           &kp NB_PIPE               &kp NB_TILDE
                                               &kp LGUI     &kp RIGHT_ALT        &kp SPACE         &kp BKSP      &trans                      &kp RET
             >;
         };

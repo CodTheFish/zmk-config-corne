@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp CTRL>,
+                <&kp LCTRL>,
                 <&kp LALT>,
                 <&macro_tap>,
                 <&kp S>,

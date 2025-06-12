@@ -69,7 +69,13 @@
         lossless: lossless {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = 
+                <&macro_press>,
+                <&kp CTRL>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>;
             label = "LOSSLESS";
         };
     };

@@ -76,7 +76,7 @@
                 <&macro_tap>,
                 <&kp S>,
                 <&macro_release>,
-                <&kp CTRL &kp LALT>;
+                <&kp LCTRL &kp LALT>;
 
             label = "LOSSLESS";
         };

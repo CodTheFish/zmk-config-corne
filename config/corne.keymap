@@ -110,7 +110,7 @@
             display-name = "Lower";
             bindings = <
 &kp TAB     &kp NB_N1     &kp NB_N2     &kp NB_N3     &kp NB_N4     &kp NB_N5          &kp NB_N6      &kp NB_N7   &kp NB_N8  &kp NB_N9  &kp NB_N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &trans         &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &tog 3
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &trans         &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &tog 4
 &kp LSHFT   &kp ESC       &trans        &trans        &caps_word    &kp PRINTSCREEN    &trans         &kp DELETE  &trans     &trans     &trans     &trans
                                         &kp LGUI      &trans        &kp SPACE          &kp BACKSPACE  &trans      &kp RALT
             >;
@@ -132,13 +132,22 @@
             >;
         };
 
+        Function {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         gaming {
             display-name = "Gaming";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T    &kp Y   &kp U   &kp I   &kp O   &kp P      &tog 3
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T    &kp Y   &kp U   &kp I   &kp O   &kp P      &tog 4
 &kp M      &kp A  &kp S  &kp D      &kp F      &kp G    &kp H   &kp J   &kp K   &kp L   &trans     &alt_tab
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B    &kp M   &kp N   &trans  &trans  &lossless  &kp ESC
-                         &kp LCTRL  &kp SPACE  &mo 4    &trans  &trans  &trans
+                         &kp LCTRL  &kp SPACE  &mo 5    &trans  &trans  &trans
             >;
         };
 

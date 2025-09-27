@@ -79,6 +79,14 @@
 
             label = "LOSSLESS";
         };
+
+        SnippingTool: SnippingTool {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>;
+
+            label = "SNIPPINGTOOL";
+        };
     };
 
     keymap {

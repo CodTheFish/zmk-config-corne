@@ -68,6 +68,28 @@
         };
     };
 
+    behaviors {
+        leftmodtap: leftmodtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFTMODTAP";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            tapping-term-ms = <120>;
+            hold-trigger-key-positions = <6 30 18 31 19 7 9 8 20 32 21 33 34 22 10>;
+        };
+
+        rightmodtap: rightmodtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHTMODTAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            hold-trigger-key-positions = <5 17 29 28 16 4 3 15 27 26 14 2 1 13 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -80,10 +102,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J          &kp L  &kp U         &kp Y       &kp NB_O_SLASH  &kp NB_A_RING
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M          &kp N  &kp E         &kp I       &kp O           &kp NB_AE
-&kp ESC    &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K          &kp H  &kp NB_COMMA  &kp NB_DOT  &kp NB_MINUS    &kp NB_QUESTION
-                         &kp LGUI  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RET
+&kp TAB    &kp Q              &kp W                     &kp F                       &kp P                   &kp B        &kp J          &kp L                     &kp U                 &kp Y                       &kp NB_O_SLASH      &kp NB_A_RING
+&kp LCTRL  &leftmodtap TAB A  &leftmodtap LEFT_SHIFT R  &leftmodtap LEFT_CONTROL S  &leftmodtap LEFT_ALT T  &kp G        &kp M          &rightmodtap RIGHT_ALT N  &rightmodtap RCTRL E  &rightmodtap RIGHT_SHIFT I  &rightmodtap TAB O  &kp NB_AE
+&kp ESC    &kp Z              &kp X                     &kp C                       &kp D                   &kp V        &kp K          &kp H                     &kp NB_COMMA          &kp NB_DOT                  &kp NB_MINUS        &kp NB_QUESTION
+                                                        &kp LGUI                    &mo 1                   &kp SPACE    &kp BACKSPACE  &mo 2                     &kp RET
             >;
         };
 
